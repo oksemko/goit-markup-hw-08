@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0/">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,21 +50,17 @@
                     </a>
                 </li>
             </ul>
-
+            
             <!--Mobile menu START-->
-            <button  type="button" class="menu__btn" data-menu-open>
-                <svg class="menu__icon" width="24" height="16">
-                    <use href="./images/sprite.svg#icon-menu">
+            <div class="mobile__menu">
+                <button type="button" class="menu-button" aria-expanded="false"
+                aria-controls="menu-container" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu">
+                    </use>
+                    <use class="icon-close" href="./images/sprite.svg#icon-close">
                     </use>
                 </svg>
-            </button>
-
-            <div class="mobile__menu mobile-menu__is-open" data-menu>
-                <button  type="button" class="close__btn" data-menu-close>
-                    <svg class="close__icon" width="18.67" height="18.67">
-                        <use href="./images/sprite.svg#icon-close">
-                        </use>
-                    </svg>
                 </button>
             </div>
             <!--Mobile menu END-->
