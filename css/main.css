@@ -430,11 +430,39 @@ button {
   color: var(--accent-color);
 }
 
+.menu__list {
+  display: none;
+}
+
+.contacts {
+  display: none;
+}
+
+.header {
+  background-color: var(--header-color);
+}
+
 .header {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .hero {
