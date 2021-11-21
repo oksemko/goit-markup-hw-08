@@ -174,12 +174,12 @@
 }
 
 .menu__btn {
+  width: 40px;
+  height: 40px;
   background-color: var(--header-color);
   cursor: pointer;
   padding: 0;
   line-height: 0;
-  width: 40px;
-  height: 40px;
 
   border: none;
 
@@ -194,7 +194,7 @@
   height: 16px;
 }
 
-.mobile-menu {
+.mobile__menu {
   position: fixed;
   z-index: 100;
 
@@ -215,4 +215,60 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+
+  border: none;
+}
+
+.close__icon {
+  width: 18.67pxpx;
+  height: 18.67px;
+}
+
+.menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header__tel-link {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.modal-btn__header {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.test {
+  @media screen and (max-width: 479px) {
+    font-size: 8vw;
+  }
+  font-size: 34px;
+  line-height: 40px;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
 // <!-- END Mobile Menu -->
