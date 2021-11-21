@@ -499,6 +499,11 @@ button {
   height: 16px;
 }
 
+.menu__btn:hover .menu__icon,
+.menu__btn:focus .menu__icon {
+  fill: var(--accent-color);
+}
+
 .mobile__menu {
   position: fixed;
   z-index: 100;
@@ -515,19 +520,19 @@ button {
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
-.mobile-menu.is-open {
+.mobile__menu .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
 }
 
-.close-btn {
+.close__btn {
   position: absolute;
   top: 10px;
   right: 15px;
   width: 40px;
   height: 40px;
-  background-color: transparent;
+  background-color: var(--header-color);
   cursor: pointer;
   padding: 0;
   line-height: 0;

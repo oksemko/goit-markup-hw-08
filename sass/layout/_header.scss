@@ -192,6 +192,11 @@
   color: var(--primary-text-color);
   width: 24px;
   height: 16px;
+
+  .menu__btn:hover &,
+  .menu__btn:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .mobile__menu {
@@ -215,13 +220,13 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
-.mobile-menu.is-open {
+.mobile__menu .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
 }
 
-.close-btn {
+.close__btn {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -229,7 +234,7 @@
   width: 40px;
   height: 40px;
 
-  background-color: transparent;
+  background-color: var(--header-color);
   cursor: pointer;
   padding: 0;
   line-height: 0;
