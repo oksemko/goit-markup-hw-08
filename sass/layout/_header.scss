@@ -127,13 +127,6 @@
   }
 }
 
-// .header__container {
-//   display: flex;
-//   align-items: center;
-//   padding-top: 24px;
-//   padding-bottom: 25px;
-// }
-
 // .navigation {
 //     display: flex;
 // }
@@ -171,3 +164,55 @@
 //         fill: var(--accent-color);
 //     }
 // }
+
+//  <!-- Mobile menu START-->
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__btn {
+  background-color: var(--header-color);
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu__icon {
+  color: var(--primary-text-color);
+  width: 24px;
+  height: 16px;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding: 48px 40px;
+
+  background-color: wheat;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+// <!-- END Mobile Menu -->
