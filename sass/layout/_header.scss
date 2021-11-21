@@ -44,11 +44,15 @@
 // }
 
 .menu__list {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .contacts {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 // /*-----header-----*/
@@ -180,8 +184,9 @@
   cursor: pointer;
   padding: 0;
   line-height: 0;
-
   border: none;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -211,69 +216,52 @@
 
   padding: 48px 40px;
 
-  background-color: wheat;
+  background: var(--header-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile__menu .is-open {
+.mobile-menu__is-open {
   opacity: 1;
   visibility: visible;
-  pointer-events: all;
+  pointer-events: auto;
 }
 
 .close__btn {
   position: absolute;
   top: 10px;
   right: 15px;
-
   width: 40px;
   height: 40px;
-
+  border: none;
   background-color: var(--header-color);
   cursor: pointer;
   padding: 0;
   line-height: 0;
 
-  border: none;
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .close__icon {
   width: 18.67pxpx;
   height: 18.67px;
-}
 
-.menu {
-  @media screen and (max-width: 767px) {
-    display: none;
+  .close__btn:hover &,
+  .close__btn:focus & {
+    color: var(--accent-color);
   }
 }
 
-.header__tel-link {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
-.modal-btn__header {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
-.test {
-  @media screen and (max-width: 479px) {
-    font-size: 8vw;
-  }
-  font-size: 34px;
-  line-height: 40px;
-
-  letter-spacing: 0.02em;
-
-  color: #2196f3;
-}
-// <!-- END Mobile Menu -->
+// <!--Mobile menu END-->

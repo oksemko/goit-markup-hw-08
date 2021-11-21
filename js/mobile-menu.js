@@ -1,7 +1,7 @@
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
+  const mobileMenu = document.querySelector('[data-menu]');
+  const openMenuBtn = document.querySelector('[data-menu-open]');
+  const closeMenuBtn = document.querySelector('[data-menu-close]');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -20,7 +20,7 @@
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+  window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
