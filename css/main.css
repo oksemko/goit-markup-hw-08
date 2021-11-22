@@ -682,9 +682,11 @@ button {
 }
 
 .icon__menu {
-  width: 24px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   color: var(--primary-text-color);
+  top: 10px;
+  right: 15px;
 }
 
 .menu__button:hover .icon__menu,
@@ -693,9 +695,12 @@ button {
 }
 
 .icon__close {
-  width: 18.67px;
-  height: 18.67px;
+  width: 40px;
+  height: 40px;
   color: var(--primary-text-color);
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .menu__buttonn:hover .icon__close,
@@ -719,28 +724,29 @@ button {
   position: fixed;
   z-index: 100;
   top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
+  right: 0;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
   background: var(--header-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  display: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 767px) {
   .menu__container {
     display: none;
+    visibility: hidden;
+    pointer-events: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+  }
+  .menu__container.is-open {
+    display: block;
+    visibility: visible;
+    pointer-events: auto;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -750,13 +756,6 @@ button {
     justify-content: space-between;
     flex-grow: 1;
   }
-}
-
-.menu__container .is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  display: block;
 }
 
 .hero {
