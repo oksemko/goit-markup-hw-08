@@ -710,14 +710,17 @@ button {
 
 .menu__button .icon__close {
   display: none;
+  visibility: hidden;
 }
 
-.menu__button .is-open .icon__close {
+.menu__button.is-open .icon__close {
   display: block;
+  visibility: visible;
 }
 
-.menu__button .is-open .icon__menu {
+.menu__button.is-open .icon__menu {
   display: none;
+  visibility: hidden;
 }
 
 .menu__container {
