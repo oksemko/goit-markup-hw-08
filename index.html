@@ -19,22 +19,23 @@
         <div class="container header__container">
         <a class="header__logo" href="index.html" lang="en"><span class="header__web">Web</span><span class="header__studio">Studio</span></a>
         <!--header-->
+        <div class="menu-container" id="menu-container" data-menu>
         <nav class="navigation">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a class="menu__link current" href="">Студия</a>
+                    <a class="menu__link menu--link__page current" href="">Студия</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="./portfolio.html">Портфолио</a>
+                    <a class="menu__link menu--link__page" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="">Контакты</a>
+                    <a class="menu__link menu--link__page" href="">Контакты</a>
                 </li>
             </ul>
         </nav>
-            <ul class="contacts">
+            <ul class="contacts__list">
                 <li class="contacts__item">
-                    <a class="contacts__link current" href="mailto:info@devstudio.com">
+                    <a class="contacts__link contacts--link__mail current" href="mailto:info@devstudio.com">
                         <svg class="contacts__icon" width="16" height="12">
                             <use href="./images/sprite.svg#icon-envelope">
                             </use>
@@ -42,7 +43,7 @@
                     </a>
                 </li>
                 <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+380961111111">
+                    <a class="contacts__link contacts--link__tel" href="tel:+380961111111">
                         <svg class="contacts__icon" width="10" height="16">
                             <use href="./images/sprite.svg#icon-smartphone">
                             </use>
@@ -50,9 +51,10 @@
                     </a>
                 </li>
             </ul>
+        </div>
             
             <!--Mobile menu START-->
-            <div class="mobile__menu">
+
                 <button type="button" class="menu-button" aria-expanded="false"
                 aria-controls="menu-container" data-menu-button>
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -62,7 +64,7 @@
                     </use>
                 </svg>
                 </button>
-            </div>
+        
             <!--Mobile menu END-->
         </div>
     </header>
