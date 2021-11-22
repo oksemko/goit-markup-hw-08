@@ -514,6 +514,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   align-items: center;
+  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
@@ -660,6 +661,17 @@ button {
 
 .navigation {
   margin-bottom: 302px;
+}
+
+.social__link {
+  display: flex;
+  justify-items: last baseline;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  align-items: center;
 }
 
 .menu__button {
