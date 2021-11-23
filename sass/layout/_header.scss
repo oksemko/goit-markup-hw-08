@@ -1,30 +1,20 @@
 .header {
-  position: relative;
-  max-width: 480px;
-  height: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
   border-bottom: 1px solid #ececec;
   background-color: var(--header-color);
   padding-top: 16px;
   padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid #ececec;
-    background-color: var(--header-color);
     padding-top: 26px;
     padding-bottom: 26px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid #ececec;
-    background-color: var(--header-color);
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -34,9 +24,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  padding-left: 15px;
-  padding-right: 10px;
 }
 
 .header__logo {
@@ -79,22 +66,30 @@
   }
 }
 
+// .menu__button .header__logo {
+//   display: block;
+//   visibility: visible;
+// }
+
+// .menu__button.is-open .header__logo {
+//   display: none;
+//   visibility: hidden;
+// }
+
 .menu__list {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
 .contacts__list {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
 .social__list {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  display: none;
 }
 
 .menu__item .current::after {
@@ -132,6 +127,10 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -328,7 +327,7 @@
 }
 
 .social__link {
-  @media screen and (max-width: 768x) {
+  @media screen and (max-width: 767px) {
     display: flex;
     font-weight: 500;
     font-size: 18px;
@@ -385,6 +384,8 @@
 .icon__close {
   width: 40px;
   height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: var(--primary-text-color);
 
   .menu__button:hover &,
@@ -404,16 +405,6 @@
 }
 
 .menu__button.is-open .icon__menu {
-  display: none;
-  visibility: hidden;
-}
-
-.menu__button .header__logo {
-  display: block;
-  visibility: visible;
-}
-
-.menu__button.is-open .header__logo {
   display: none;
   visibility: hidden;
 }
@@ -443,7 +434,6 @@
       display: block;
       visibility: visible;
       pointer-events: auto;
-
       transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
