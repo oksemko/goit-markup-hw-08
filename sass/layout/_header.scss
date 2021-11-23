@@ -1,6 +1,7 @@
 .header {
   position: absolute;
   max-width: 480px;
+  height: 60px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ececec;
@@ -403,6 +404,16 @@
 }
 
 .menu__button.is-open .icon__menu {
+  display: none;
+  visibility: hidden;
+}
+
+.menu__button .header__logo {
+  display: block;
+  visibility: visible;
+}
+
+.menu__button.is-open .header__logo {
   display: none;
   visibility: hidden;
 }
