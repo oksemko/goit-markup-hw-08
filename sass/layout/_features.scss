@@ -1,72 +1,85 @@
-.features-title {
+.features-list {
+  display: flex;
+  margin-bottom: -30px;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  .features-item {
+    @media screen and(min-width: 768px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .features-item {
+    @media screen and(min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+    }
+    @media screen and(min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+    }
+  }
+
+  .features-description {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+  }
+
+  .features-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
     text-transform: uppercase;
-}
+    margin-bottom: 10px;
 
+    @media screen and(min-width: 768px) {
+    text-align: left;
+  }
+  }
 
-.features-text {
+  .features-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
-}
+  }
 
-/*-----container-----*/
-
-.features-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.features-list {
-    display: flex;
-}
-
-.features-item {
-    &:not(:last-child) {
-    margin-right: 30px;
-    }
-}
-
-.features-title {
-    margin-bottom: 10px;
-}
-
-.features-description {
+  .gallery-list {
     display: flex;
     justify-content: center;
-    background-color: var(--background-color);
-}
+  }
 
-.gallery-list {
-    display: flex;
-    justify-content: center;
-}
-
-.gallery-item {
+  .gallery-item {
     width: 100%;
     height: 100%;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 30px;
-}
+  }
 
-.gallery-item {
+  .gallery-item {
     &:not(:last-child) {
-    margin-right: 30px;
+      margin-right: 30px;
     }
-}
+  }
 
-.gallery-link {
-    width: 270px;
-    height: 130px;
+  .gallery-link {
+    width: 100%;
+    height: 120px;
     border-radius: 4px;
     background-color: var(--third-background-color);
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    margin-bottom: 30px;
+    // flex-basis: calc(100% / 4 - 30px);
+  }
