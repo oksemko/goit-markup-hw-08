@@ -49,21 +49,20 @@
         url('../images/hero/hero-desktop2x.jpg');
     }
   }
-}
 
-.hero-title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  letter-spacing: 0.06em;
-  color: var(--primary-title-color);
+  .hero-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    color: var(--primary-title-color);
+    text-transform: uppercase;
 
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-
-  text-transform: uppercase;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-weight: 900;
@@ -76,8 +75,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-
-    text-transform: uppercase;
   }
 }
 
