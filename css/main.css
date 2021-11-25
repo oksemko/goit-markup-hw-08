@@ -384,39 +384,50 @@ button {
   justify-content: space-between;
 }
 
-.header__logo {
-  text-decoration: none;
-}
-
-.header__web {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__web:hover, .header__web:focus {
-  color: var(--accent-color);
-}
-
-.header__studio {
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-duration: 250ms;
+  animation-iteration-count: 2;
+}
+
+.logo:hover, .logo:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
+.logo-accent {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__studio:hover, .header__studio:focus {
+.logo-accent:hover, .logo-accent:focus {
   color: var(--accent-color);
 }
 
@@ -432,8 +443,10 @@ button {
   }
 }
 
-.social__list {
-  display: none;
+@media screen and (min-width: 767px) {
+  .social__list {
+    display: none;
+  }
 }
 
 .menu__item .current::after {
@@ -444,13 +457,6 @@ button {
   border-radius: 2px;
   background-color: var(--accent-color);
   bottom: -26px;
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .menu__item .current::after {
-    display: block;
-  }
 }
 
 .menu__link {
@@ -506,18 +512,20 @@ button {
   color: var(--accent-color);
 }
 
-.contacts--link__mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
-  align-items: center;
-  margin-bottom: 64px;
+@media screen and (max-width: 768px) {
+  .contacts__link-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    align-items: center;
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .contacts--link__mail {
+  .contacts__link-mail {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
@@ -528,7 +536,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts--link__mail {
+  .contacts__link-mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -537,12 +545,12 @@ button {
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .contacts--link__mail:hover, .contacts--link__mail:focus {
+  .contacts__link-mail:hover, .contacts__link-mail:focus {
     color: var(--accent-color);
   }
 }
 
-.contacts--link__tel {
+.contacts__link-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -553,7 +561,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .contacts--link__tel {
+  .contacts__link-tel {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
@@ -565,7 +573,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts--link__tel {
+  .contacts__link-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -574,7 +582,7 @@ button {
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .contacts--link__tel:hover, .contacts--link__tel:focus {
+  .contacts__link-tel:hover, .contacts__link-tel:focus {
     color: var(--accent-color);
   }
 }
@@ -590,8 +598,10 @@ button {
   }
 }
 
-.menu__item:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (max-width: 768px) {
+  .menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -668,16 +678,16 @@ button {
   margin-bottom: 302px;
 }
 
-.social__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (max-width: 767px) {
+  .social__list {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .social__item:not(:last-child) {
-    margin-right: 10px;
-  }
+.social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 @media screen and (max-width: 767px) {
@@ -689,16 +699,9 @@ button {
     letter-spacing: 0.02em;
     color: var(--accent-color);
     align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
   }
-}
-
-.social__link::after:not(:last-child) {
-  content: '';
-  width: 22px;
-  height: 0px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-  margin-left: 10px;
 }
 
 .menu__button {
@@ -736,12 +739,6 @@ button {
   right: 15px;
   fill: var(--primary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateX(100%);
-}
-
-.icon__close.is-open {
-  transform: translateX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__button:hover .icon__close,
