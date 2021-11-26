@@ -169,7 +169,7 @@
                     <div class="activity-list-description">
                         <h3 class="activity-list-title">Десктопные приложения</h3> 
                         <img
-                        class="doings__thumb"
+                        class="activity-thumb"
                         src="./images/activity/activ-1-desktop.jpg"
                         srcset="./images/activity/activ-1-desktop@2x 2x.jpg"
                         alt="Программирование"
@@ -180,7 +180,7 @@
                     <div class="activity-list-description">
                         <h3 class="activity-list-title">Мобильные приложения</h3>
                         <img
-                        class="doings__thumb"
+                        class="activity-thumb"
                         src="./images/activity/activ-2-desktop.jpg"
                         srcset="./images/activity/activ-2-desktop@2x 2x.jpg"
                         alt="Дизайн"
@@ -191,7 +191,7 @@
                     <div class="activity-list-description">
                         <h3 class="activity-list-title">Дизайнерские решения</h3>
                         <img
-                        class="doings__thumb"
+                        class="activity-thumb"
                         src="./images/activity/activ-3-desktop.jpg"
                         srcset="./images/activity/activ-3-desktop@2x 2x.jpg"
                         alt="Графика"
@@ -201,14 +201,34 @@
             </ul>
         </div>
         </section>
-        <!-- <section class="section team-section">
-        <div class="container">
-            <h2 class="section-title team-title">Наша команда</h2> -->
+        <section class="section team-section">
+        <div class="container team-wrapper">
+            <h2 class="section-title team-title">Наша команда</h2>
             <!--Фото членов команды-->            
-            <!-- <ul class="team-list">
+            <ul class="team-list">
                 <li class="team-item">
-                    <img src="./images/Product Designer.jpg" alt="дизайнер"
-                    width="270" height="260"/>
+                    <div class="team-thumb">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/team/team-1-desktop.jpg 1x,
+                            ./images/team/team-1-desktop@2x 2x"
+                            media="(min-width:1200px)" />
+                            <source
+                            srcset="
+                            ./images/team/team-1-tablet.jpg 1x,
+                            ./images/team/team-1-tablet@2x.jpg 2x"
+                            media="(min-width:768px)" />
+                            <source
+                            srcset="./images/team/team-1.jpg 1x, 
+                            ./images/team/team-1@2x.jpg 2x"
+                            media="(min-width:480px)" />
+                            <img
+                            class="team-img"
+                            src="./images/team/team-1.jpg"
+                            alt="Игорь Демьяненко" />
+                        </picture>
+                    </div>
                 <div class="team-item-description">
                     <h3 class="team-item-title">Игорь Демьяненко</h3>
                     <p class="team-item-text" lang="en">Product Designer</p>
@@ -249,8 +269,28 @@
                 </div>
                 </li>
                 <li class="team-item">
-                    <img src="./images/Frontend Developer.jpg" alt="фронт разработчик"
-                    width="270" height="260"/>
+                    <div class="team-thumb">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/team/team-2-desktop.jpg 1x,
+                            ./images/team/team-2-desktop@2x 2x"
+                            media="(min-width:1200px)" />
+                            <source
+                            srcset="
+                            ./images/team/team-2-tablet.jpg 1x,
+                            ./images/team/team-2-tablet@2x.jpg 2x"
+                            media="(min-width:768px)" />
+                            <source
+                            srcset="./images/team/team-2-desktop.jpg 1x, 
+                            ./images/team/team-2@2x.jpg 2x"
+                            media="(min-width:480px)" />
+                            <img
+                            class="team-img"
+                            src="./images/team/team-2.jpg"
+                            alt="Ольга Репина" />
+                        </picture>
+                    </div>
                 <div class="team-item-description">
                     <h3 class="team-item-title">Ольга Репина</h3>
                     <p class="team-item-text" lang="en">Frontend Developer</p>
@@ -291,8 +331,28 @@
                 </div>
                 </li>
                 <li class="team-item">
-                    <img src="./images/Marketing.jpg" alt="специалист по маркетингу"
-                    width="270" height="260"/>
+                    <div class="team-thumb">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/team/team-3-desktop.jpg 1x,
+                            ./images/team/team-3-desktop@2x 2x"
+                            media="(min-width:1200px)" />
+                            <source
+                            srcset="
+                            ./images/team/team-3-tablet.jpg 1x,
+                            ./images/team/team-3-tablet@2x.jpg 2x"
+                            media="(min-width:768px)" />
+                            <source
+                            srcset="./images/team/team-3-desktop.jpg 1x, 
+                            ./images/team/team-3@2x.jpg 2x"
+                            media="(min-width:480px)" />
+                            <img
+                            class="team-img"
+                            src="./images/team/team-3.jpg"
+                            alt="Николай Тарасов" />
+                        </picture>
+                    </div>
                 <div class="team-item-description">
                     <h3 class="team-item-title">Николай Тарасов</h3>
                     <p class="team-item-text" lang="en">Marketing</p>
@@ -333,8 +393,28 @@
                 </div>
                 </li>
                 <li class="team-item">
-                    <img src="./images/UI Designer.jpg" alt="дизайнер интерфейса"
-                    width="270" height="260"/>
+                    <div class="team-thumb">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/team/team-4-desktop.jpg 1x,
+                            ./images/team/team-4-desktop@2x 2x"
+                            media="(min-width:1200px)" />
+                            <source
+                            srcset="
+                            ./images/team/team-4-tablet.jpg 1x,
+                            ./images/team/team-4-tablet@2x.jpg 2x"
+                            media="(min-width:768px)" />
+                            <source
+                            srcset="./images/team/team-4-desktop.jpg 1x, 
+                            ./images/team/team-4@2x.jpg 2x"
+                            media="(min-width:480px)" />
+                            <img
+                            class="team-img"
+                            src="./images/team/team-4.jpg"
+                            alt="Михаил Ермаков" />
+                        </picture>
+                    </div>
                 <div class="team-item-description">
                     <h3 class="team-item-title">Михаил Ермаков</h3>
                     <p class="team-item-text" lang="en">UI Designer</p>
@@ -378,8 +458,8 @@
         </div>
         </section>
         <section class="section clients-section">
-        <div class="container">
-            <h2 class="section-title clients-title">Постоянные клиенты</h2> --> -->
+        <!-- <div class="container">
+            <h2 class="section-title clients-title">Постоянные клиенты</h2>  -->
                 <!--Логотипы компаний-->            
                 <!-- <ul class="clients-list">
                     <li class="clients-item">
