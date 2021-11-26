@@ -95,7 +95,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: baseline;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -187,4 +187,10 @@
   &:focus {
     fill: var(--accent-color);
   }
+}
+
+.modal-close-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--primary-text-color);
 }
