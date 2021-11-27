@@ -1330,6 +1330,10 @@ button {
   background-color: var(--background-color);
 }
 
+.clients-wrapper {
+  justify-content: space-between;
+}
+
 .clients-title {
   font-family: Roboto;
   font-weight: 700;
