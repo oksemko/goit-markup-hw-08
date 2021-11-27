@@ -1387,12 +1387,14 @@ button {
 .clients-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
   .clients-item {
     width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1406,13 +1408,7 @@ button {
   .clients-item {
     display: flex;
     width: calc((100% - 6 * 30px) / 6);
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .clients-item:not(:last-child) {
     margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 
