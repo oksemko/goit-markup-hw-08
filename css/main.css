@@ -431,7 +431,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header {
     width: 1200px;
     height: 80px;
@@ -447,6 +447,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .header__container {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .header__container {
     justify-content: center;
   }
@@ -709,13 +715,12 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contacts__list {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-bottom: 0px;
-    margin-left: auto;
   }
 }
 
@@ -800,12 +805,20 @@ button {
 
 .header__contacts {
   display: flex;
-  display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   margin-top: auto;
-  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
 }
 
 .menu__button {
