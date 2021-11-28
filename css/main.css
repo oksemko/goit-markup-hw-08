@@ -698,6 +698,7 @@ button {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -758,12 +759,12 @@ button {
 }
 
 .navigation {
-  margin-bottom: 302px;
+  padding-bottom: 302px;
 }
 
 @media screen and (min-width: 768px) {
   .navigation {
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -793,6 +794,15 @@ button {
     margin-right: 10px;
     margin-left: 10px;
   }
+}
+
+.header__contacts {
+  display: flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
 }
 
 .menu__button {
@@ -864,6 +874,7 @@ button {
     background: var(--header-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     transform: translateX(100%);
+    justify-content: space-between;
   }
 }
 
