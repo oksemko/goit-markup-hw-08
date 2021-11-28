@@ -811,6 +811,14 @@ button {
   margin-top: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    padding-top: 21px;
+    padding-bottom: 0;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header__contacts {
     display: flex;
@@ -905,6 +913,8 @@ button {
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
