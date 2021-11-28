@@ -299,10 +299,12 @@
     justify-content: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0px;
+    margin-left: auto;
   }
 }
 
@@ -391,6 +393,8 @@
   justify-content: center;
   flex-direction: column;
   margin-top: auto;
+
+  margin-left: auto;
 }
 
 .menu__button {

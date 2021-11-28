@@ -709,11 +709,13 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .contacts__list {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0px;
+    margin-left: auto;
   }
 }
 
@@ -803,6 +805,7 @@ button {
   justify-content: center;
   flex-direction: column;
   margin-top: auto;
+  margin-left: auto;
 }
 
 .menu__button {
@@ -1833,7 +1836,7 @@ button {
   list-style: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filter-list {
     display: flex;
     justify-content: center;
