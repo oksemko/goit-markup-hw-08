@@ -26,14 +26,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--logo-->
+     <!--logo-->
     <header class="header">
         <div class="container header__container">
         <a  href="index.html" class="logo  header__logo" lang="en">
             <span class="logo logo-accent">Web</span>Studio</span>
         </a>
         <!--header-->
-        <div class="menu__container" id="menu__container" data-menu></div>
+        <div class="menu__container" id="menu__container" data-menu>
         <nav class="navigation">
             <ul class="menu__list">
                 <li class="menu__item">
@@ -47,9 +47,11 @@
                 </li>
             </ul>
         </nav>
-           <ul class="contacts__list">
+            </ul>
+            </nav>
+            <ul class="contacts__list">
                 <li class="contacts__item">
-                    <a class="contacts__link contacts--link__tel" href="tel:+380961111111">
+                    <a class="contacts__link contacts__link-tel" href="tel:+380961111111">
                         <svg class="contacts__icon" width="10" height="16">
                             <use href="./images/sprite.svg#icon-smartphone">
                             </use>
@@ -57,7 +59,7 @@
                     </a>
                 </li>
                 <li class="contacts__item">
-                    <a class="contacts__link contacts--link__mail current" href="mailto:info@devstudio.com">
+                    <a class="contacts__link contacts__link-mail current" href="mailto:info@devstudio.com">
                         <svg class="contacts__icon" width="16" height="12">
                             <use href="./images/sprite.svg#icon-envelope">
                             </use>
@@ -79,8 +81,8 @@
                     <a class="social__link" href="" lang="en">LinkedIn</a>
                 </li>
             </ul>
-            </div>
-            <!--Mobile menu START-->
+        </div>
+           <!--Mobile menu START-->
                 <button type="button" class="menu__button" aria-expanded="false"
                 aria-controls="menu__container" data-menu-button>
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -95,11 +97,11 @@
     </header>
     <main>
       <!--hero-->
-      <!-- <section class="section">
-        <div class="container">
+       <section class="section filter-section">
+        <div class="container filter-container">
           <h1 class="visually-hidden" hidden>Портфолио</h1>
           <!--filter-->
-          <!-- <ul class="filter-list">
+          <ul class="filter-list">
             <li class="filter-item">
               <button class="filter-btn btn current" type="button">Все</button>
             </li>
@@ -116,17 +118,31 @@
             <li class="filter-item">
               <button class="filter-btn btn" type="button">Маркетинг</button>
             </li>
-          </ul> --> -->
-          <!-- <ul class="portfolio-list">
+          </ul>
+          <ul class="portfolio-list">
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/Technokryak.jpg"
-                    atl="открыта страница на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-1-desktop.jpg 1x,
+                          ./images/portfolio/works-1-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-1-tablet.jpg 1x,
+                          ./images/portfolio/works-1-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-1.jpg 1x,
+                        ./images/portfolio/works-1@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-1.jpg"
+                        alt="открыта страница на ноутбуке" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -142,12 +158,26 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/New Orlean vs Golden Star poster.jpg"
-                    atl="постер с баскетболистами"
-                    width="370"
-                    height="294"
-                  />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-2-desktop.jpg 1x,
+                          ./images/portfolio/works-2-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-2-tablet.jpg 1x,
+                          ./images/portfolio/works-2-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-2.jpg 1x,
+                         ./images/portfolio/works-2@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-2.jpg"
+                        alt="постер с баскетболистами" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Постер New Orlean vs Golden Star это современная площадка
                     распространения коронавируса. Компании используют эту
@@ -166,12 +196,26 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/Seafood Restaurant.jpg"
-                    atl="название ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-3-desktop.jpg 1x,
+                          ./images/portfolio/works-3-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-3-tablet.jpg 1x,
+                          ./images/portfolio/works-3-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-3.jpg 1x,
+                        ./images/portfolio/works-3@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-3.jpg"
+                        alt="постер с баскетболистами" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Ресторан Seafood это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -187,12 +231,26 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/Prime Project.jpg"
-                    atl="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-4-desktop.jpg 1x,
+                          ./images/portfolio/works-4-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-4-tablet.jpg 1x,
+                          ./images/portfolio/works-4-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-4.jpg 1x, 
+                        ./images/portfolio/works-4@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-4.jpg"
+                        alt="постер с баскетболистами" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Проект Prime это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -208,12 +266,26 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/Boxes project.jpg"
-                    atl="коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-5-desktop.jpg 1x,
+                          ./images/portfolio/works-5-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-5-tablet.jpg 1x,
+                          ./images/portfolio/works-5-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-5.jpg 1x, 
+                        ./images/portfolio/works-5@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-5.jpg"
+                        alt="постер с баскетболистами" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Проект Boxes это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -229,12 +301,26 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/Inspiration has no Borders.jpg"
-                    atl="монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-6-desktop.jpg 1x,
+                          ./images/portfolio/works-6-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-6-tablet.jpg 1x,
+                          ./images/portfolio/works-6-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-6.jpg 1x, 
+                        ./images/portfolio/works-6@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-6.jpg"
+                        alt="постер с баскетболистами" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Inspiration has no Borders это современная площадка
                     распространения коронавируса. Компании используют эту
@@ -252,13 +338,26 @@
             </li>
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
-                <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/Limited Edition.jpg"
-                    atl="открытый журнал"
-                    width="370"
-                    height="294"
-                  />
+                <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-7-desktop.jpg 1x,
+                          ./images/portfolio/works-7-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-7-tablet.jpg 1x,
+                          ./images/portfolio/works-7-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-7.jpg 1x, 
+                        ./images/portfolio/works-7@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-7.jpg"
+                        alt="постер с баскетболистами" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Издание Limited Edition это современная площадка
                     распространения коронавируса. Компании используют эту
@@ -275,12 +374,26 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/LAB project.jpg"
-                    atl="бирка с логотипом"
-                    width="370"
-                    height="294"
-                  />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-8-desktop.jpg 1x,
+                          ./images/portfolio/works-8-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-8-tablet.jpg 1x,
+                          ./images/portfolio/works-8-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-8.jpg 1x, 
+                        ./images/portfolio/works-8@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-8.jpg"
+                        alt="бирка с логотипом" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Проект LAB это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -296,12 +409,26 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
-                  <img
-                    src="./images/Growing Business.jpg"
-                    atl="работа на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/works-9-desktop.jpg 1x,
+                          ./images/portfolio/works-9-desktop.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source
+                        srcset="
+                          ./images/portfolio/works-9-tablet.jpg 1x,
+                          ./images/portfolio/works-9-tablet.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                        ./images/portfolio/works-9.jpg 1x, 
+                        ./images/portfolio/works-9@2x.jpg 2x"
+                        media="(min-width: 480px)" />
+                      <img
+                        src="./images/portfolio/works-9.jpg"
+                        alt="работа на ноутбуке" />
+                    </picture>
                   <p class="portfolio-text-description">
                     Growing Business это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -360,21 +487,24 @@
             <li class="accession-social-item">
               <a href="" class="accession-social-link">
                 <svg class="accession-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
+                  <use href="./images/sprite.svg#icon-instagram">
+                  </use>
                 </svg>
               </a>
             </li>
             <li class="accession-social-item">
               <a href="" class="accession-social-link">
                 <svg class="accession-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
+                  <use href="./images/sprite.svg#icon-twitter">
+                  </use>
                 </svg>
               </a>
             </li>
             <li class="accession-social-item">
               <a href="" class="accession-social-link">
                 <svg class="accession-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
+                  <use href="./images/sprite.svg#icon-facebook">
+                  </use>
                 </svg>
               </a>
             </li>
@@ -412,6 +542,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+     <script src="./js/mobile-menu.js">
+    </script>
   </body>
 </html>
