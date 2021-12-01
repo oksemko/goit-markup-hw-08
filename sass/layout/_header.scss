@@ -451,9 +451,6 @@
 }
 
 .icon__close {
-  //   position: absolute;
-  //   top: 10px;
-  //   right: 15px;
   fill: var(--primary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -494,17 +491,23 @@
     padding-bottom: 21px;
   }
 
-  //   &.is-open .menu__button {
-  //     position: absolute;
-  //     top: 10px;
-  //     right: 15px;
-  //     display: block;
-  //     visibility: visible;
-  //     fill: var(--primary-text-color);
-  //     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-open .menu__button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+    visibility: visible;
+    fill: var(--primary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  //     .menu__button:hover &,
-  //     .menu__button:focus & {
-  //       color: var(--accent-color);
-  //     }
+    .menu__button:hover &,
+    .menu__button:focus & {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.menu__container.is-open .menu__button {
+  display: block;
 }
