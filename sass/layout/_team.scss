@@ -44,6 +44,15 @@
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
+    justify-content: space-between;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    justify-content: center;
   }
 }
 
