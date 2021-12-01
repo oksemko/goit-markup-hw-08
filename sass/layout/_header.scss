@@ -403,10 +403,11 @@
   }
 
   @media screen and (min-width: 1200px) {
+    padding-top: 21px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
     margin-left: auto;
   }
 }
@@ -508,6 +509,6 @@
   }
 }
 
-.menu__container.is-open .menu__button {
+.menu__container .menu__button {
   display: block;
 }
