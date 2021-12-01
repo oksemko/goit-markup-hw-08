@@ -403,12 +403,12 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 21px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: baseline;
     margin-left: auto;
+    padding-bottom: 0;
   }
 }
 
