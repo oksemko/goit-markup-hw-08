@@ -65,7 +65,7 @@
     color: var(--accent-color);
   }
 
-  &:not(:last-child) {
+  & {
     @media screen and (max-width: 1200px) {
       margin-bottom: 30px;
     }

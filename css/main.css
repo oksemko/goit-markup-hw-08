@@ -1270,7 +1270,7 @@ button {
 }
 
 @media screen and (max-width: 1200px) {
-  .team-item:not(:last-child) {
+  .team-item {
     margin-bottom: 30px;
   }
 }
