@@ -1604,6 +1604,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-right {
+    margin-left: 70px;
+  }
+}
+
 .accession-title {
   font-weight: 700;
   font-size: 14px;
