@@ -15,7 +15,7 @@
 
   overflow-y: scroll;
 
-  & .is-hidden {
+  &.is-hidden {
     z-index: 1;
     opacity: 0;
     visibility: hidden;
