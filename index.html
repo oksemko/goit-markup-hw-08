@@ -15,23 +15,22 @@
 </head>
 <body>
     <!--logo-->
-    <header class="header">
-        <div class="container header__container">
+    <header class="header container">
+        <div class="header__section">
         <a  href="index.html" class="logo  header__logo" lang="en">
             <span class="logo logo-accent">Web</span>Studio</span>
         </a>
         <!--header-->
-        <div class="menu__container" id="menu__container" data-menu>
-        <nav class="navigation">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link current" href="">Студия</a>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link current" href="">Студия</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./portfolio.html">Портфолио</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="">Контакты</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="">Контакты</a>
                 </li>
             </ul>
             </nav>
@@ -69,20 +68,71 @@
                 </li>
             </ul>
             </div>
-        </div>
-        <!--Mobile menu START-->
-                <button type="button" class="menu__button" aria-expanded="false"
-                aria-controls="menu__container" data-menu-button>
-                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon__menu" href="./images/sprite.svg#icon-menu">
-                    </use>
-                    <use class="icon__close" href="./images/sprite.svg#icon-close">
-                    </use>
+            <!-----MOBILE MENU----->
+            <button type="button" class="header__button" data-menu-open>
+                  <svg width="24" height="16" class="menu__icon">
+                    <use href="./images/sprite.svg#icon-menu""></use>
                 </svg>
                 </button>
+                
+                <div class="mobile-menu" data-menu>
+                    <div class="mobile-menu__block container">
+                        <ul class="mobile-menu__links">
+                            <li class="mobile-menu__item">
+                                <a href="index.html" class="mobile-menu__link current">Студия</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="portfolio.html" class="mobile-menu__link">Портфолио</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="" class="mobile-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    <div>
+                        <ul class="mobile-menu__contacts">
+                            <li class="mobile-menu__contact-phone">
+                                <a href="tel:+380961111111" class="mobile-menu__phone">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-menu__contact-mail">
+                                <a href="mailto:info@devstudio.com" lang="en"
+                            class="mobile-menu__mail">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu__social">
+                        <li class="mobile-menu__social-item">
+                            <a href="#" class="mobile-menu__social-link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="#" class="mobile-menu__social-link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="#" class="mobile-menu__social-link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <button class="menu__button" data-menu-close>
+                      <svg width="19" height="19" class="close__icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </header>
+     <!--Mobile menu START-->
+                <!-- <button type="button" class="menu__button" aria-expanded="false"
+                aria-controls="menu__container" data-menu-button>
+                <svg aria-label="Переключатель мобильного меню">
+                    <use width="24" height="16 class="icon__menu" href="./images/sprite.svg#icon-menu">
+                    </use>
+                    <use width="19" height="19" class="icon__close" href="./images/sprite.svg#icon-close">
+                    </use>
+                </svg>
+                </button> -->
             <!--Mobile menu END-->
-        </div>
-    </header>
     <main>
         <!--hero-->
         <section class="hero">

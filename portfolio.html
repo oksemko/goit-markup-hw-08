@@ -27,8 +27,8 @@
   </head>
   <body>
      <!--logo-->
-    <header class="header">
-        <div class="container header__container">
+    <header class="header container">
+        <div class="header__section">
         <a  href="index.html" class="logo  header__logo" lang="en">
             <span class="logo logo-accent">Web</span>Studio</span>
         </a>
@@ -47,8 +47,6 @@
                 </li>
             </ul>
         </nav>
-            </ul>
-            </nav>
             <div class="header__contacts">
             <ul class="contacts__list">
                 <li class="contacts__item">
@@ -83,14 +81,13 @@
                 </li>
             </ul>
             </div>
-        </div>
            <!--Mobile menu START-->
                 <button type="button" class="menu__button" aria-expanded="false"
                 aria-controls="menu__container" data-menu-button>
-                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon__menu" href="./images/sprite.svg#icon-menu">
+                <svg  aria-label="Переключатель мобильного меню">
+                    <use width="26" height="16" class="icon__menu" href="./images/sprite.svg#icon-menu">
                     </use>
-                    <use class="icon__close" href="./images/sprite.svg#icon-close">
+                    <use width="19" height="19" class="icon__close" href="./images/sprite.svg#icon-close">
                     </use>
                 </svg>
                 </button>
@@ -99,31 +96,30 @@
     </header>
     <main>
       <!--hero-->
-       <section class="section filter-section">
-        <div class="container filter-container">
+       <section class="section portfolio-section">
+        <div class="container">
           <h1 class="visually-hidden" hidden>Портфолио</h1>
           <!--filter-->
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="filter-btn btn current" type="button">Все</button>
+          <ul class="portfolio-buttons">
+            <li class="portfolio-btn">
+              <button class="portfolio-item btn current" type="button">Все</button>
             </li>
 
-            <li class="filter-item">
-              <button class="filter-btn btn" type="button">Веб-сайты</button>
+            <li class="portfolio-btn">
+              <button class="portfolio-item btn" type="button">Веб-сайты</button>
             </li>
-            <li class="filter-item">
-              <button class="filter-btn btn" type="button">Приложения</button>
+            <li class="portfolio-btn">
+              <button class="portfolio-item btn" type="button">Приложения</button>
             </li>
-            <li class="filter-item">
-              <button class="filter-btn btn" type="button">Дизайн</button>
+            <li class="portfolio-btn">
+              <button class="portfolio-item btn" type="button">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button class="filter-btn btn" type="button">Маркетинг</button>
+            <li class="portfolio-btn">
+              <button class="portfolio-item btn" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
           <ul class="portfolio-list">
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                     <picture>
@@ -143,7 +139,7 @@
                         ./images/portfolio/works-1@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                        class="portfolio-img"
+                        class="portfolio-picture"
                         src="./images/portfolio/works-1.jpg"
                         alt="открыта страница на ноутбуке" />
                     </picture>
@@ -153,13 +149,13 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title">Технокряк</h2>
-                  <p class="portfolio-item-text">Веб-сайт</p>
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title">Технокряк</h2>
+                  <p class="portfolio-img-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                     <picture>
@@ -176,10 +172,10 @@
                       <source
                         srcset="
                         ./images/portfolio/works-2.jpg 1x,
-                         ./images/portfolio/works-2@2x.jpg 2x"
+                        ./images/portfolio/works-2@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                        class="portfolio-img"
+                        class="portfolio-picture"
                         src="./images/portfolio/works-2.jpg"
                         alt="постер с баскетболистами" />
                     </picture>
@@ -190,15 +186,13 @@
                     сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title">
-                    Постер New Orlean vs Golden Star
-                  </h2>
-                  <p class="portfolio-item-text">Дизайн</p>
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio-img-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                   <picture>
@@ -218,7 +212,7 @@
                         ./images/portfolio/works-3@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                         class="portfolio-img"
+                        class="portfolio-picture"
                         src="./images/portfolio/works-3.jpg"
                         alt="превью приложения для ресторана" />
                     </picture>
@@ -228,13 +222,13 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title">Ресторан Seafood</h2>
-                  <p class="portfolio-item-text">Приложение</p>
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title">Ресторан Seafood</h2>
+                  <p class="portfolio-img-text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                   <picture>
@@ -254,7 +248,7 @@
                         ./images/portfolio/works-4@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                        class="portfolio-img"
+                        class="portfolio-picture"
                         src="./images/portfolio/works-4.jpg"
                         alt="проект Прайм" />
                     </picture>
@@ -264,13 +258,13 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title">Проект Prime</h2>
-                  <p class="portfolio-item-text">Маркетинг</p>
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title">Проект Prime</h2>
+                  <p class="portfolio-img-text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                   <picture>
@@ -290,7 +284,7 @@
                         ./images/portfolio/works-5@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                        class="portfolio-img"
+                        class="portfolio-picture"
                         src="./images/portfolio/works-5.jpg"
                         alt="проект Боксес" />
                     </picture>
@@ -301,13 +295,13 @@
                   </p>
                 </a>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title">Проект Boxes</h2>
-                  <p class="portfolio-item-text">Приложение</p>
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title">Проект Boxes</h2>
+                  <p class="portfolio-img-text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                   <picture>
@@ -327,7 +321,7 @@
                         ./images/portfolio/works-6@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                        class="portfolio-img"
+                        class="portfolio-picture"
                         src="./images/portfolio/works-6.jpg"
                         alt="монитор компьютера" />
                     </picture>
@@ -338,15 +332,15 @@
                     сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title" lang="en">
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title" lang="en">
                     Inspiration has no Borders
                   </h2>
-                  <p class="portfolio-item-text">Веб-сайт</p>
+                  <p class="portfolio-img-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                 <picture>
@@ -366,7 +360,7 @@
                         ./images/portfolio/works-7@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                        class="portfolio-img"
+                        class="portfolio-picture"
                         src="./images/portfolio/works-7.jpg"
                         alt="издание журнала" />
                     </picture>
@@ -377,13 +371,13 @@
                     сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title">Издание Limited Edition</h2>
-                  <p class="portfolio-item-text">Дизайн</p>
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title">Издание Limited Edition</h2>
+                  <p class="portfolio-img-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                     <picture>
@@ -403,7 +397,7 @@
                         ./images/portfolio/works-8@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                         class="portfolio-img"
+                         class="portfolio-picture"
                         src="./images/portfolio/works-8.jpg"
                         alt="бирка с логотипом" />
                     </picture>
@@ -413,13 +407,13 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title">Проект LAB</h2>
-                  <p class="portfolio-item-text">Маркетинг</p>
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title">Проект LAB</h2>
+                  <p class="portfolio-img-text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-img">
               <a href="" class="portfolio-gallery-link link">
                 <div class="portfolio-gallery-description">
                     <picture>
@@ -439,7 +433,7 @@
                         ./images/portfolio/works-9@2x.jpg 2x"
                         media="(min-width: 480px)" />
                       <img
-                        class="portfolio-img"
+                        class="portfolio-picture"
                         src="./images/portfolio/works-9.jpg"
                         alt="работа на ноутбуке" />
                     </picture>
@@ -449,11 +443,11 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-item-description">
-                  <h2 class="portfolio-item-title" lang="en">
+                <div class="portfolio-img-description">
+                  <h2 class="portfolio-img-title" lang="en">
                     Growing Business
                   </h2>
-                  <p class="portfolio-item-text">Приложение</p>
+                  <p class="portfolio-img-text">Приложение</p>
                 </div>
               </a>
             </li>
