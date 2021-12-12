@@ -929,6 +929,7 @@ button {
 }
 
 .hero {
+  max-width: 480px;
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -977,26 +978,18 @@ button {
   }
 }
 
-.hero-title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  letter-spacing: 0.06em;
-  color: var(--primary-title-color);
-  text-align: center;
-  text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero-title {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
     color: var(--primary-title-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     width: 360px;
   }
 }
@@ -1063,13 +1056,21 @@ button {
   .features-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -30px;
     margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .features-item {
     flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
     margin-left: 30px;
   }
 }
@@ -1077,19 +1078,32 @@ button {
 @media screen and (min-width: 1200px) {
   .features-item {
     flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
     margin-left: 30px;
   }
 }
 
-.features-item .features-item:not(:last-child) {
-  margin-right: 30px;
+.features-icon {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
-.features-description {
-  display: block;
-  justify-content: center;
-  background-color: var(--background-color);
+@media screen and (min-width: 768px) {
+  .features-icon {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-icon {
+    width: 270px;
+  }
 }
 
 .features-title {
@@ -1097,14 +1111,19 @@ button {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .features-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .features-title {
     text-align: left;
   }
@@ -1116,37 +1135,6 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-}
-
-.gallery-list {
-  display: block;
-  max-width: 450px;
-  justify-content: center;
-}
-
-.gallery-item {
-  height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-color: var(--third-background-color);
-}
-
-@media screen and (min-width: 768px) {
-  .gallery-item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.gallery-link {
-  max-width: 450px;
-  border-radius: 4px;
-  background-color: var(--third-background-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
 }
 
 .activity-section-hidden {
