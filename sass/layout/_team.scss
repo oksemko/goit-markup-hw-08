@@ -1,20 +1,15 @@
-.team-section {
-  max-width: 1600px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+.team__section {
   background-color: var(--third-background-color);
 }
 
-.team-wrapper {
-  @media screen and (min-width: 768px) {
-    margin: o;
-    padding: 0;
-  }
-}
+// .team__wrapper {
+//   @media screen and (min-width: 768px) {
+//     margin: o;
+//     padding: 0;
+//   }
+// }
 
-.team-title {
+.team__title {
   font-family: Roboto;
   font-weight: 700;
   font-size: 28px;
@@ -33,7 +28,7 @@
   }
 }
 
-.team-list {
+.team__list {
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -42,27 +37,20 @@
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-    justify-content: space-between;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 
   @media screen and(min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-    justify-content: center;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
-.team-item {
-  display: block;
-  margin-bottom: 0;
-  padding: 0;
-
+.team__item {
   background-color: var(--background-color);
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -74,47 +62,30 @@
     color: var(--accent-color);
   }
 
-  & {
-    @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
-    margin: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
-// .team-img {
-//   @media screen and (max-width: 767px) {
-//     margin-left: auto;
-//     margin-right: auto;
-//     width: 100%;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 354px;
-//     height: 374px;
-//     width: 100%;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: 270px;
-//     height: 260px;
-//     width: 100%;
-//   }
-// }
-
-.team-item-description {
+.team__description {
   padding: 30px 0px;
 }
 
-.team-item-title {
+.team__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -124,7 +95,7 @@
   margin-bottom: 10px;
 }
 
-.team-item-text {
+.team__text {
   font-size: 16px;
   line-height: 1.19x;
   text-align: center;

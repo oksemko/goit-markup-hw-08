@@ -1191,23 +1191,11 @@ button {
   color: var(--primary-title-color);
 }
 
-.team-section {
-  max-width: 1600px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+.team__section {
   background-color: var(--third-background-color);
 }
 
-@media screen and (min-width: 768px) {
-  .team-wrapper {
-    margin: o;
-    padding: 0;
-  }
-}
-
-.team-title {
+.team__title {
   font-family: Roboto;
   font-weight: 700;
   font-size: 28px;
@@ -1221,14 +1209,14 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .team-title {
+  .team__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
   }
 }
 
-.team-list {
+.team__list {
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -1236,64 +1224,61 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .team-list {
+  .team__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-    justify-content: space-between;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team-list {
+  .team__list {
     display: flex;
     flex-wrap: nowrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-    justify-content: center;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
-.team-item {
-  display: block;
-  margin-bottom: 0;
-  padding: 0;
+.team__item {
   background-color: var(--background-color);
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-item:hover, .team-item:focus {
+.team__item:hover, .team__item:focus {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 1200px) {
-  .team-item {
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 767px) {
-  .team-item {
+@media screen and (min-width: 768px) {
+  .team__item {
     width: calc(100% / 2 - 30px);
-    margin: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team-item {
+  .team__item {
     width: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
-.team-item-description {
+.team__description {
   padding: 30px 0px;
 }
 
-.team-item-title {
+.team__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -1303,7 +1288,7 @@ button {
   margin-bottom: 10px;
 }
 
-.team-item-text {
+.team__text {
   font-size: 16px;
   line-height: 1.19x;
   text-align: center;
