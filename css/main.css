@@ -978,8 +978,14 @@ button {
   }
 }
 
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 1199px) {
-  .hero-title {
+  .hero__title {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
@@ -995,7 +1001,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero-title {
+  .hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -1005,7 +1011,7 @@ button {
   }
 }
 
-.hero-btn {
+.hero__btn {
   min-width: 200px;
   font-weight: 700;
   font-size: 16px;
@@ -1022,30 +1028,24 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
 }
 
-.hero-btn {
+.hero__btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 @media screen and (min-width: 1200px) {
-  .features-wrapper {
+  .features__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-.features-list {
+.features__list {
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -1053,7 +1053,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .features-list {
+  .features__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
@@ -1062,13 +1062,13 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .features-item:not(:last-child) {
+  .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .features-item {
+  .features__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
@@ -1076,14 +1076,14 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .features-item {
+  .features__item {
     flex-basis: calc(100% / 4 - 30px);
     margin-top: 30px;
     margin-left: 30px;
   }
 }
 
-.features-icon {
+.features__icon {
   width: 100%;
   height: 120px;
   border-radius: 4px;
@@ -1095,18 +1095,18 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .features-icon {
+  .features__icon {
     width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .features-icon {
+  .features__icon {
     width: 270px;
   }
 }
 
-.features-title {
+.features__title {
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -1118,18 +1118,18 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .features-title {
+  .features__title {
     text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .features-title {
+  .features__title {
     text-align: left;
   }
 }
 
-.features-text {
+.features__text {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
@@ -1137,63 +1137,58 @@ button {
   color: var(--second-text-color);
 }
 
-.activity-section-hidden {
+.activity__section {
   display: none;
-  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .activity-section-hidden {
+  .activity__section {
     display: block;
     padding-top: 0px;
   }
 }
 
-.activity-section {
-  padding-top: 0;
-}
-
-.activity-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.activity-title {
+.activity__title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
 }
 
-.activity-list {
+.activity__list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
 }
 
-.activity-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.activity-list-description {
+.item-first,
+.item-second,
+.item-third {
   position: relative;
 }
 
-.activity-list-title {
+.info-first,
+.info-second,
+.info-third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
   height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.activity__text {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--primary-title-color);
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.activity-thumb {
-  display: block;
 }
 
 .team-section {
