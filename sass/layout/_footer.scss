@@ -1,15 +1,13 @@
 .footer {
-  max-width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--secondary-background-color);
 }
 
-.footer-wrapper {
+.footer-section {
+  display: flex;
+  align-items: baseline;
+
   @media screen and(min-width: 480px) {
     display: flex;
     flex-direction: column;
